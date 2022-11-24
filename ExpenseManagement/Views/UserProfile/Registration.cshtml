@@ -1,0 +1,67 @@
+﻿@model UserProfile
+
+@{
+	Layout = "_Layout-UserProfile";
+	ViewData["Title"] = "login";
+}
+
+<form method="post" asp-action="Registration">
+	<div class="container align-content-center">
+		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+		
+	
+
+
+		<div class=row>
+			<div class="col-4">
+				<label asp-for="FirstName"></label>
+				<input asp-for="FirstName" class="form-control" />
+				<span asp-validation-for="FirstName" class="text-danger"></span>
+			</div>
+		</div>
+		<br />
+
+
+		<div class=row>
+			<div class="col-4">
+				<label asp-for="LastName"></label>
+				<input asp-for="LastName" class="form-control" />
+				<span asp-validation-for="LastName" class="text-danger"></span>
+			</div>
+		</div>
+		<br />
+
+		<div class=row>
+			<div class="col-4">
+				<label asp-for="EmailAddress"></label>
+				<input asp-for="EmailAddress" class="form-control"  />
+				<span asp-validation-for="EmailAddress" class="text-danger"></span>
+			</div>
+		</div>
+		<br />
+
+		<div class=row>
+			<div class="col-4">
+				<label asp-for="Password"></label>
+				<input asp-for="Password" class="form-control" type="password" />
+				<span asp-validation-for="Password" class="text-danger"></span>
+			</div>
+		</div>
+		<br />
+
+	
+
+
+
+
+
+		<div class="w-12 btn-group" role="group">
+			<input type="submit" class="btn btn-primary mx-1" value="Save" />
+			<a asp-controller="UserProfile" asp-action="Login" class="btn-btn-success mx-1">Cancel</a>
+		</div>
+	</div>
+
+
+
+</form>
