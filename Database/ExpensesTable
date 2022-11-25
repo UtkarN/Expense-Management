@@ -1,0 +1,6 @@
+SELECT TOP (1000) [ExpenseId]
+      ,[ExpenseDate]
+      ,[ExpenseGivenTo]
+      ,[ExpenseAmount]
+      ,[ExpenseCategoryId]
+  FROM [ExpenseManagement1].[dbo].[Expenses]
