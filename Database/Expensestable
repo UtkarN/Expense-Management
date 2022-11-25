@@ -1,3 +1,0 @@
-SELECT TOP (1000) [ExpenseCategoryId]
-      ,[ExpenseCategoryname]
-  FROM [ExpenseManagement1].[dbo].[ExpenseCategory]
