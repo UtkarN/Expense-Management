@@ -1,0 +1,6 @@
+SELECT TOP (1000) [UserId]
+      ,[FirstName]
+      ,[LastName]
+      ,[EmailAddress]
+      ,[Password]
+  FROM [ExpenseManagement1].[dbo].[UserProfile]
